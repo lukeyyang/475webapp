@@ -8,3 +8,4 @@ flask-bootstrap-3.3.5.7
 flask-wtf-0.12 
 itsdangerous-0.24
 visitor-0.1.2
+flask-nav-0.5

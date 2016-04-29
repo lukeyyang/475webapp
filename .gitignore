@@ -92,5 +92,5 @@ ENV/
 .ropeproject
 
 # editor
-.swp
+*.swp
 
