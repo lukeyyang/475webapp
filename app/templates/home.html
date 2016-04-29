@@ -27,23 +27,23 @@
       <p>Select your desired irrigation zones: </p>
       <p>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/1" >1</a>
+                href="{{ url_for('set_zone', zonenum = 1) }}" >1</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/2" >2</a>
+                href="{{ url_for('set_zone', zonenum = 2) }}" >2</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/3" >3</a>
+                href="{{ url_for('set_zone', zonenum = 3) }}" >3</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/4" >4</a>
+                href="{{ url_for('set_zone', zonenum = 4) }}" >4</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/5" >5</a>
+                href="{{ url_for('set_zone', zonenum = 5) }}" >5</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/6" >6</a>
+                href="{{ url_for('set_zone', zonenum = 6) }}" >6</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/7" >7</a>
+                href="{{ url_for('set_zone', zonenum = 7) }}" >7</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/8" >8</a>
+                href="{{ url_for('set_zone', zonenum = 8) }}" >8</a>
         <a class="btn btn-lg btn-default" role="button"
-           href="setzone/0" >Reset</a>
+                href="{{ url_for('set_zone', zonenum = 0) }}" >Reset</a>
       </p>
     </div>
 {%- endblock %}

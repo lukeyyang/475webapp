@@ -9,3 +9,4 @@ flask-wtf
 itsdangerous
 visitor
 flask-nav
+pyserial
