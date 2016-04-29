@@ -4,10 +4,17 @@ from .nav import nav
 import serial
 import datetime
 
+log_path ="/home/pi/Desktop/ee459/runtime/sprinkler.log" 
+
 @app.route('/')
 @app.route('/home')
 def index():
-    return render_template('home.html')
+    status_str = ""
+    with open(log_path, "r") as logfd:
+        for line in logfd:
+            pass
+        status_str = line
+    return render_template('home.html', status_str = status_str)
 
 
 
@@ -21,7 +28,7 @@ def set_zone(zonenum):
         response = ser.read(255)
         if (len(response) > 0):
 #                print('Got: ' + response)
-            with open("/home/pi/Desktop/ee459/runtime/sprinkler.log", "a") as logfd:
+            with open(log_path, "a") as logfd:
                 d = datetime.datetime.now()
                 timestr = d.strftime("%m/%d/%Y %H:%M:%S")
                 logfd.write(timestr + " " + response.strip())
